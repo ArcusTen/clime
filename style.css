@@ -8,9 +8,10 @@
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* display: block; */
+  text-align: center;
   min-height: 100vh;
   background: url("assets/background.jpg");
   background-size: cover;
@@ -18,8 +19,22 @@ body {
   overflow: hidden;
 }
 
-.container {
+h2 {
+  font-weight: 400;
   position: relative;
+  padding-top: 220px ;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.774);
+}
+
+.container {
+  /* display: flex; */
+  /* position: relative; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
   width: 400px;
   height: 100px;
   background: rgba(255, 255, 255, .1);

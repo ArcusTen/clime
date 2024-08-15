@@ -139,3 +139,11 @@ inputField.addEventListener('keypress', (e) => {
         handleSearch();
     }
 });
+
+// Event listener for the '/' key
+document.addEventListener('keydown', (e) => {
+    if (e.key === '/') {
+        e.preventDefault();  // Preventing the default behavior of '/'
+        inputField.focus();   // Focus the search input field
+    }
+});
