@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Parkinsans:wght@300;400;500;600;700;800;900&display=swap");
 
 * {
   margin: 0;
@@ -8,12 +8,9 @@
 }
 
 body {
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* display: block; */
   text-align: center;
   min-height: 100vh;
-  background: url("assets/background.jpg");
+  background: url("assets/background.jpg");     /* */
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -92,6 +89,29 @@ h2 {
   color: #fff;
   padding: 0 40px 0 5px;
   cursor: pointer;
+}
+
+.not-found {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 110px;
+}
+
+.not-found img {
+  width: 65%;
+}
+
+.not-found p {
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 12px;
+}
+
+.city-hide {
+  display: none;
 }
 
 .weather-box {
@@ -189,25 +209,13 @@ h2 {
   overflow: hidden;
 }
 
-.weather-details .humidity {
-  padding-left: 20px;
-  justify-content: flex-start;
-}
-
 .weather-details .wind {
   padding-right: 20px;
   justify-content: flex-end;
 }
-
-.weather-details i {
-  font-size: 56px;
-  margin-right: 10px;
-}
-
-.weather-details span {
-  display: inline-block;
-  font-size: 22px;
-  font-weight: 500;
+.weather-details .humidity {
+  padding-left: 20px;
+  justify-content: flex-start;
 }
 
 .weather-details p {
@@ -215,28 +223,18 @@ h2 {
   font-weight: 500;
 }
 
-.not-found {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  margin-top: 110px;
-}
 
-.not-found img {
-  width: 65%;
-}
-
-.not-found p {
+.weather-details span {
+  display: inline-block;
   font-size: 22px;
   font-weight: 500;
-  margin-top: 12px;
 }
 
-.city-hide {
-  display: none;
+.weather-details i {
+  font-size: 56px;
+  margin-right: 10px;
 }
+
 
 #clone-info-weather,
 #clone-info-humidity,
