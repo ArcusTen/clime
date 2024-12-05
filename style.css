@@ -134,7 +134,7 @@ h2 {
 
 .weather-box .box,
 .not-found .box {
-  transform: translateY(-100%);
+  transform: translateY(100%);
 }
 
 .weather-box.active .box,
@@ -145,7 +145,7 @@ h2 {
 }
 
 .weather-box .box .info-weather {
-  transform: translateY(-120%);
+  transform: translateY(120%);
 }
 
 .container.active .weather-box .box .info-weather,
@@ -193,7 +193,7 @@ h2 {
   display: flex;
   align-items: center;
   width: 50%;
-  transform: translateY(-100%);
+  transform: translateY(100%);
 }
 
 .weather-details.active .humidity,
@@ -205,7 +205,7 @@ h2 {
 
 .weather-details .humidity .info-humidity,
 .weather-details .wind .info-wind {
-  transform: translateY(-100%);
+  transform: translateY(100%);
   overflow: hidden;
 }
 
@@ -240,11 +240,11 @@ h2 {
 #clone-info-humidity,
 #clone-info-wind {
   position: absolute;
-  transform: translateY(-100%);
+  transform: translateY(100%);
 }
 
 #clone-info-weather .weather {
-  transform: translateY(120%);
+  transform: translateY(120%);    /* -120 is making an overflow */
   transition: transform 1s ease, opacity 0s;
   transition-delay: 0s, 2s;
 }
@@ -260,7 +260,7 @@ h2 {
 
 #clone-info-humidity span,
 #clone-info-wind span {
-  transform: translateY(100%);
+  transform: translateY(-100%);
   transition: transform 1s ease;
 }
 
